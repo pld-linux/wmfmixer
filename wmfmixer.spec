@@ -7,6 +7,7 @@ License:	GPL
 Vendor:		Dimitry Fink <finik@sporu.net>
 Group:		X11/Applications/Sound
 Source0:	http://www.finik.net/files/%{name}-%{version}.tar.gz
+# Source0-md5:	620712536263d60782b50f16e1aec910
 Source1:	%{name}.desktop
 Patch0:		%{name}-Makefile.pach
 Patch1:		%{name}-main.patch
