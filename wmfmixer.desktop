@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=wmfmixer
 Comment=Simple mixer application
-Comment[pl]=Prosty program do obs³ugi d¼wiêku
+Comment[pl]=Prosty program do obsÅ‚ugi dÅºwiÄ™ku
 Icon=default.xpm
 Exec=/usr/bin/wmfmixer
 Terminal=false
