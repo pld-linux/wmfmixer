@@ -2,7 +2,7 @@ Summary:	WMfmixer is a simple mixer application for WindowMaker
 Summary(pl):	Prosty program do obs³ugi d¼wiêku w WindowMakerze
 Name:		wmfmixer
 Version:	0.1
-Release:	3
+Release:	4
 License:	GPL
 Vendor:		Dimitry Fink <finik@sporu.net>
 Group:		X11/Applications/Sound
@@ -28,7 +28,10 @@ WMfmixer jest prostym dokowalnym programem do kontroli nad urz±dzeniem
 %patch1 -p1
 
 %build
-%{__make} CFLAGS="%{rpmcflags}" CC="%{__cc}"
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}" \
+	LIBDIR="-L/usr/X11R6/%{_lib}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
