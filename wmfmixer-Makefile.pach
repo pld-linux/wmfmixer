@@ -1,0 +1,26 @@
+--- wmfmixer-0.1/Makefile~	Fri Sep 27 15:25:07 2002
++++ wmfmixer-0.1/Makefile	Fri Sep 27 15:25:07 2002
+@@ -2,12 +2,13 @@
+ LIBS   = -lXpm -lXext -lX11
+ CFLAGS = -O2
+ OBJS  = wmfmixer.o wmgeneral.o 
++CC     = cc
+ 
+ .c.o:
+-	cc -g -c $(CFLAGS) -Wall $< -o $*.o
++	$(CC) -c $(CFLAGS) -Wall $< -o $*.o
+ 
+ wmfmixer: $(OBJS)
+-	cc -o wmfmixer $^ -lXext $(LIBDIR) $(LIBS)
++	$(CC) -o wmfmixer $^ -lXext $(LIBDIR) $(LIBS)
+ 
+ all:: wmfmixer
+ 
+@@ -16,6 +17,7 @@
+ 		rm $$i; \
+ 	done
+ 	rm wmfmixer
++
+ install::
+ 	
+ 	cp -f wmfmixer /usr/local/bin/
