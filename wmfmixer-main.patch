@@ -1,0 +1,11 @@
+--- wmfmixer-0.1/wmfmixer.c~	Fri Sep 27 15:27:12 2002
++++ wmfmixer-0.1/wmfmixer.c	Fri Sep 27 15:27:12 2002
+@@ -66,7 +66,7 @@
+  /* Main */
+ /********/
+ 
+-void main(int argc, char *argv[]) 
++int main(int argc, char *argv[]) 
+ {
+ 	int		i,SliderPressed = -1;
+ 
