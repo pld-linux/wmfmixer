@@ -2,7 +2,7 @@ Summary:	WMfmixer is a simple mixer application for WindowMaker
 Summary(pl):	Prosty program do obs³ugi d¼wiêku w WindowMakerze
 Name:		wmfmixer
 Version:	0.1
-Release:	1
+Release:	2
 License:	GPL
 Vendor:		Dimitry Fink <finik@sporu.net>
 Group:		X11/Applications/Sound
