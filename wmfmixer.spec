@@ -33,11 +33,11 @@ WMfmixer jest prostym dokowalnym programem do kontroli nad urz±dzeniem
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_applnkdir}/Multimedia}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_applnkdir}/DockApplets}
 
 install wmfmixer $RPM_BUILD_ROOT%{_bindir}/wmfmixer
 install wmfmixer.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/wmfmixer.xpm
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Multimedia
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -46,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc HINTS
 %attr(755,root,root) %{_bindir}/wmfmixer
-%{_applnkdir}/Multimedia/wmfmixer.desktop
+#%{_applnkdir}/DockApplets/wmfmixer.desktop
 %{_pixmapsdir}/wmfmixer.xpm
