@@ -5,7 +5,7 @@ Version:	0.1
 Release:	1
 License:	GPL
 Vendor:		Dimitry Fink <finik@sporu.net>
-Group:		X11/Applications/Multimedia
+Group:		X11/Applications/Sound
 Source0:	http://www.finik.net/files/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-Makefile.pach
