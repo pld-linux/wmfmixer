@@ -13,7 +13,6 @@ Patch1:		%{name}-main.patch
 URL:		http://www.finik.net/software.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 WMfmixer is a simple dockable program for controlling /dev/mixer
