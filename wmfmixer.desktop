@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=wmfmixer
+Comment=Simple mixer application
+Comment[pl]=Prosty program do obs³ugi d¼wiêku
+Icon=default.xpm
+Exec=/usr/X11R6/bin/wmfmixer
+Terminal=0
+Type=Application
+
