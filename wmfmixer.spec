@@ -8,11 +8,12 @@ Vendor:		Dimitry Fink <finik@sporu.net>
 Group:		X11/Applications/Multimedia
 Source0:	http://www.finik.net/files/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
+Patch0:		%{name}-Makefile.pach
+Patch1:		%{name}-main.patch
 URL:		http://www.finik.net/software.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
-%define		_xbindir	%{_prefix}/bin
 
 %description
 WMfmixer is a simple dockable program for controlling /dev/mixer
@@ -23,17 +24,18 @@ WMfmixer jest prostym dokowalnym programem do kontroli nad urz±dzeniem
 /dev/mixer. Niew±tpliw± zalet± tej aplikacji jest jej prostota.
 
 %prep
-%setup -qn %{name}-%{version}
+%setup -q
+%patch0 -p1
+%patch1 -p1
 
 %build
-OPTFLAGS="%{rpmcflags}" CC="%{__cc}"
-%{__make}
+%{__make} CFLAGS="%{rpmcflags}" CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_xbindir},%{_pixmapsdir},%{_applnkdir}/Multimedia}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_applnkdir}/Multimedia}
 
-install wmfmixer $RPM_BUILD_ROOT%{_xbindir}/wmfmixer
+install wmfmixer $RPM_BUILD_ROOT%{_bindir}/wmfmixer
 install wmfmixer.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/wmfmixer.xpm
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Multimedia
 
@@ -43,6 +45,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc HINTS
-%attr (755,root,root)%{_xbindir}/wmfmixer
+%attr(755,root,root) %{_bindir}/wmfmixer
 %{_applnkdir}/Multimedia/wmfmixer.desktop
 %{_pixmapsdir}/wmfmixer.xpm
