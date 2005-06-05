@@ -12,6 +12,7 @@ Source1:	%{name}.desktop
 Patch0:		%{name}-Makefile.pach
 Patch1:		%{name}-main.patch
 URL:		http://www.finik.net/software.html
+BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
