@@ -1,5 +1,5 @@
 Summary:	WMfmixer is a simple mixer application for WindowMaker
-Summary(pl):	Prosty program do obs³ugi d¼wiêku w WindowMakerze
+Summary(pl.UTF-8):   Prosty program do obsÅ‚ugi dÅºwiÄ™ku w WindowMakerze
 Name:		wmfmixer
 Version:	0.1
 Release:	4
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 WMfmixer is a simple dockable program for controlling /dev/mixer
 device. It's simplicity is no doubt his good point.
 
-%description -l pl
-WMfmixer jest prostym dokowalnym programem do kontroli nad urz±dzeniem
-/dev/mixer. Niew±tpliw± zalet± tej aplikacji jest jej prostota.
+%description -l pl.UTF-8
+WMfmixer jest prostym dokowalnym programem do kontroli nad urzÄ…dzeniem
+/dev/mixer. NiewÄ…tpliwÄ… zaletÄ… tej aplikacji jest jej prostota.
 
 %prep
 %setup -q
