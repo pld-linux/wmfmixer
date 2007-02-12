@@ -1,5 +1,5 @@
 Summary:	WMfmixer is a simple mixer application for WindowMaker
-Summary(pl.UTF-8):   Prosty program do obsługi dźwięku w WindowMakerze
+Summary(pl.UTF-8):	Prosty program do obsługi dźwięku w WindowMakerze
 Name:		wmfmixer
 Version:	0.1
 Release:	4
