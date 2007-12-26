@@ -1,9 +1,8 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=wmfmixer
 Comment=Simple mixer application
 Comment[pl]=Prosty program do obsługi dźwięku
-Icon=default.xpm
+Icon=default
 Exec=/usr/bin/wmfmixer
 Terminal=false
 Type=Application
